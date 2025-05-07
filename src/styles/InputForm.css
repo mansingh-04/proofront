@@ -1,0 +1,115 @@
+.input-form-container {
+    margin-bottom: 30px;
+  }
+  
+  .input-selector {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--light-gray);
+  }
+  
+  .input-selector button {
+    flex: 1;
+    padding: 12px;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    border: none;
+    transition: var(--transition);
+    font-weight: 500;
+  }
+  
+  .input-selector button.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .input-selector button:not(.active):hover {
+    background-color: var(--medium-gray);
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .submit-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .submit-button:disabled {
+    background-color: var(--medium-gray);
+    cursor: not-allowed;
+  }
+
+  /* Image upload styles */
+  .image-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px dashed var(--medium-gray);
+    border-radius: var(--border-radius);
+    background-color: var(--light-gray);
+  }
+
+  .file-upload-button {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: var(--transition);
+  }
+
+  .file-upload-button:hover {
+    background-color: var(--primary-hover);
+  }
+
+  .file-name {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    word-break: break-all;
+    text-align: center;
+  }
+
+  .image-preview {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .upload-instructions {
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 15px 0 0;
+    line-height: 1.5;
+  }
+  
