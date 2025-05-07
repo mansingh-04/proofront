@@ -83,11 +83,9 @@ function Results({ data }) {
         }
       };
       
+      const apiBaseUrl = process.env.REACT_APP_API_URL || "https://prooback-production.up.railway.app";
       const serverUrls = [
-        "http://localhost:5050/train-model",
-        "http://127.0.0.1:5050/train-model", 
-        "http://0.0.0.0:5050/train-model",
-        "http://10.7.9.112:5050/train-model"
+        apiBaseUrl + "/train-model"
       ];
       
       let response = null;

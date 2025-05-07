@@ -26,11 +26,9 @@ function App() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
     }
+    const apiBaseUrl = process.env.REACT_APP_API_URL || "https://prooback-production.up.railway.app";
     const serverUrls = [
-      "http://localhost:5050/components",
-      "http://127.0.0.1:5050/components", 
-      "http://0.0.0.0:5050/components",
-      "http://10.7.9.112:5050/components"
+      apiBaseUrl + "/components"
     ];
     
     let lastError = null;
